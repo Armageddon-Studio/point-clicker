@@ -1,0 +1,69 @@
+<!doctype html>
+<html class="html">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <title>Point clicker v3.1</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arvo">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cookie">
+</head>
+
+<body>
+    <div class="div">
+        <center>
+            <div class="logo"><img class="logop" src="logo.png"></div>
+            <button onclick="clickCounterButton()" class="clickhere"><img src="Button%201.png"></button>
+            <button onclick="counterDecrease(100)" class="perk1"><img src="Perk%20Butoon%201.png"></button>
+            <button onclick="counterDecrease(300)" class="perk2"><img src="Perk%20Butoon%202.png"></button>
+            <button onclick="counterDecrease(600)" class="perk3"><img src="Perk%20Butoon%203.png"></button>
+            <button onclick="counterDecrease(1000)" class="perk4"><img src="Perk%20Butoon%204.png"></button>
+            <button onclick="counterDecrease(1500)" class="perk5"><img src="Perk%20Butoon%205.png"></button>
+            <button onclick="counterDecrease(3000)" class="perk6"><img src="Perk%20Butoon%206.png"></button>
+            <button onclick="counterDecrease(5000)" class="perk7"><img src="Perk%20Butoon%207.png"></button>
+            <button onclick="counterDecrease(10000)" class="perk8"><img src="Perk%20Butoon%208.png"></button>
+            <button onclick="counterDecrease(15000)" class="perk9"><img src="Perk%20Butoon%209.png"></button>
+            <button onclick="counterDecrease(30000)" class="perk10"><h1>perk 10</h1><img src=""></button>
+            <div class="s"><input class="number" type="button" id="mynum"></div>
+            <div class="boost">
+                <h1><b>1x</b></h1>
+            </div>
+            <h1 class="how_to_play_title">How To Play:</h1>
+            <h2 class="how_to_play_insturtions_line1">Tap on the "click here" button to get points</h2>
+            <h2 class="how_to_play_insturtions_line2">when you have enough points you can press the perk buttons and get point boost to evry click you do</h2>
+            <h2 class="how_to_play_insturtions_line3">Enjoy Point Clicker!</h2>
+            <a href="shop.html">
+      <button class= "shop" ><img src="Button%202.png"></button>
+              
+</a>
+        </center>
+    </div>
+    <script type="text/javascript">
+        var incrementer = 1;     
+        var firstTime = true;
+        var decreaseValue;  
+
+function clickCounterButton() {
+    var num = document.getElementById("mynum").value;
+    if(num == '') num = 0;
+    document.getElementById("mynum").value = parseInt(num ,10) + incrementer;
+    }
+                function counterDecrease(decreaseValue) {
+            if (firstTime == false) {
+               
+            }
+            var num = document.getElementById("mynum").value;
+            if (num == '') num = 0;
+            document.getElementById("mynum").value = parseInt(num, 0) - decreaseValue;
+            incrementer = incrementer + 1;
+            firstTime = false;
+        
+
+            
+        }
+
+      
+
+    </script>
+</body>
+
+</html>
